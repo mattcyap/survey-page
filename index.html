@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Friendship Survey Form</title>
+</head>
+<body>
+<h1 id="title">Friendship Survey Form</h1>
+<p id="description">
+        <b>Survey created to determine if we can be friends.</b>
+    </p>
+    <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+        <div class="rowTab">
+            <div class="labels">
+                <label  id="name-label" for="name">*Name:</label>
+            </div>
+            <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label id="email-label" for="email">*Email:</label>
+            </div>
+            <div class="rightTab">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label id="number-label" for="age">*Age:</label>
+            </div>
+            <div class="rightTab">
+                <input type="number" name="age" id="number" min="5" max="62" class="input-field" required placeholder="Age"> 
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="gender">What gender do you identify as?</label>
+            </div>
+            <div class="rightTab">
+                <select id="gender" name="gender" class="dropdown">
+                    <option disabled selected value>Select an Option</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Nonbinary">Nonbinary</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="rowTab">
+                <div class="labels">
+                    <label for="hobbies">What hobbies do you enjoy?</label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" hobbies="hobbies" id="hobbies" class="input-field" placeholder="Enter hobbies">
+                </div>
+        <div class="rowTab">
+                <div class="labels">
+                    <label id="number-label" for="years">*How many years have we known each other:</label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="years" id="number" min="0" max="40" class="input-field" required placeholder="Years"> 
+                </div>
+            </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="currentPos">Current Occupation:</label>
+            </div>
+            <div class="rightTab">
+                <select id="dropdown" name="currentPos" class="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="userRating">How often do we talk?</label>
+            </div>
+            <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="radio"><label>A lot<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
+                    <li class="radio"><label>Occasionally<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>
+                    <li class="radio"><label>Barely<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+                    <li class="radio"><label>Never<input name="radio-buttons" value="4" type="radio" class="userRatings"></label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightTab">
+            <div class="labels">
+                <label id="hobbies-label" for="hobbies">What hobbies do you enjoy?</label>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="preferences">Things that you like about me<br>(Check all that apply): </label>
+            </div>
+            <div class="rightTab">
+                <ul id="preferences" style="list-style: none;">
+                    <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Humor</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Loyalty</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Philosphies</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Looks</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Style</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Skills</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Money</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Work Ethic</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="comments">Any Comments or Suggestions?</label>
+            </div>
+            <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+        <button id="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
